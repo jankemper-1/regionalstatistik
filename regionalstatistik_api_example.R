@@ -9,7 +9,7 @@ library(httr)
 BASE_URL <- "https://www.regionalstatistik.de/genesisws/rest/2020"
 USERNAME <- Sys.getenv("GENESIS_USERNAME") # you can also just put your username like "username" -> Sys.getenv just hides the username and password
 PASSWORD <- Sys.getenv("GENESIS_PASSWORD")
-TABELLE  <- "13211-01-03-5"
+TABELLE  <- "13211-01-03-5" # unemployed individuals on municipality level
 
 # --- Test login ---
 r2 <- POST(
